@@ -1,0 +1,1307 @@
+/* ============================================
+   ROOT VARIABLES
+   ============================================ */
+:root {
+  --bs-primary: #754ffe;
+  --brand-color: #754ffe;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+:root {
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  font-family: "Inter", sans-serif;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f1f5f9;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   Utility classes
+   ============================================ */
+.text-primary-custom {
+  color: #754ffe;
+}
+.text-warning-custom {
+  color: rgb(245, 158, 11) !important;
+}
+.bg-warning-custom {
+  background-color: rgb(245, 158, 11) !important;
+}
+.text-fade {
+  color: rgb(100, 116, 139) !important;
+}
+.text-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+.text-md {
+  font-size: 16px;
+}
+.text-sm {
+  font-size: 14px !important;
+}
+.text-xs {
+  font-size: 12px !important;
+}
+.text-hover:hover {
+  color: #754ffe !important;
+}
+/* ============================================
+   LAYOUT & SECTIONS
+   ============================================ */
+.custom-section-first {
+  padding-top: 88px;
+  padding-bottom: 16px;
+}
+
+.custom-section-middle {
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+
+.last-custom-section {
+  padding-top: 16px !important;
+  padding-bottom: 56px;
+}
+
+.nav-footer,
+.badge-footer {
+  padding-top: 0 !important;
+}
+
+@media (min-width: 992px) {
+  .custom-section {
+    padding-top: 88px;
+    padding-bottom: 16px;
+  }
+
+  .last-custom-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.section-hero {
+  background-color: #754ffe;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-title {
+  color: rgb(255 255 255);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  margin: 0 8px 8px 0;
+}
+
+.hero-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.48px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 32px;
+  display: block;
+  unicode-bidi: isolate;
+}
+.btn-section-hero-left,
+.btn-section-hero-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* include padding in width/height */
+  height: 40px;
+  padding: 0 1rem; /* horizontal padding only */
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.6;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-section-hero-left {
+  background-color: #141414;
+  color: #fff;
+}
+
+.btn-section-hero-right {
+  background-color: white;
+  color: #272727;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.nav-container-fluid {
+  height: 40px;
+}
+
+.logo-img {
+  height: 29px;
+  width: 112px;
+}
+
+.logo-img-body {
+  padding: 3.2px 0;
+}
+
+/* Price (used in sidebar, kept with nav context) */
+.price-preview {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  letter-spacing: -0.022rem;
+}
+
+.price-preview-before {
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* ============================================
+   HAMBURGER TOGGLER
+   ============================================ */
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 6px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #754ffe;
+  display: block;
+  position: relative;
+  transition: all 0.35s ease;
+  background-image: none !important;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #754ffe;
+  position: absolute;
+  left: 0;
+  transition: all 0.35s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -5px;
+} /* closer */
+.navbar-toggler-icon::after {
+  top: 5px;
+} /* closer */
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: #754ffe;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: #754ffe;
+}
+
+/* ============================================
+   NAV LINKS
+   ============================================ */
+.navbar-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #151c27;
+  padding: 5px 5.6px !important;
+  margin: 0 0 0 3px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #754ffe;
+}
+
+.nav-link .bi-chevron-down {
+  color: rgb(71, 85, 105) !important;
+  font-size: 11px;
+  font-weight: 500;
+  text-shadow:
+    0 0 0.65px currentColor,
+    0 0 0.65px currentColor;
+  transition: transform 0.3s ease;
+  margin-top: 4px !important;
+  margin-left: 8px !important;
+}
+
+.dropdown.show .nav-link .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   NAV ICONS (bell, theme toggle, avatar)
+   ============================================ */
+.nav-icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav-icon-circle:hover {
+  background-color: white;
+}
+
+.nav-icon-circle .icon-link,
+.nav-icon-circle [data-feather] {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: #64748b;
+}
+
+.bell {
+  color: rgb(100, 116, 139);
+}
+.bell:hover {
+  color: #754ffe;
+}
+
+.mode-icon {
+  color: #000 !important;
+}
+.settings-icon {
+  height: 14px !important;
+  width: 14px !important;
+}
+.thumbs-up-icon {
+  height: 12px !important;
+  width: 12px !important;
+}
+.nav-icon-circle .notification-badge {
+  position: absolute;
+  height: 0.65rem;
+  width: 0.65rem;
+  right: 2px;
+  top: 2px;
+  border-radius: 50%;
+  border: 1.6px solid #fff;
+  background-color: #754ffe;
+  z-index: 1;
+}
+span.nav-icon-circle.bell {
+  position: relative !important;
+}
+.notifications-dropdown {
+  width: 352px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-dropdown .avatar-md {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.notifications-dropdown .list-group-item {
+  padding: 1rem;
+}
+
+.notifications-dropdown p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.notifications-dropdown h5 {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  display: inline-block;
+}
+.notification-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.notification-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+#dropdownNotification,
+#dropdownUser {
+  position: relative;
+}
+@media (max-width: 991px) {
+  #dropdownNotification {
+    position: relative !important;
+  }
+
+  #dropdownUser {
+    position: static !important;
+  }
+}
+@media (min-width: 992px) {
+  #dropdownNotification,
+  #dropdownUser {
+    position: relative;
+  }
+
+  #dropdownNotification .dropdown-menu,
+  #dropdownUser .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+      opacity 0.22s ease,
+      visibility 0.22s ease,
+      transform 0.22s ease;
+    pointer-events: none;
+    margin-top: 0 !important;
+  }
+
+  #dropdownNotification:hover .dropdown-menu,
+  #dropdownUser:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+@media (max-width: 991px) {
+  #dropdownNotification,
+  #dropdownUser {
+    position: static !important;
+  }
+
+  #dropdownNotification .dropdown-menu,
+  #dropdownUser .dropdown-menu {
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 42px !important;
+    transform: translateX(-50%) !important;
+    width: 300px !important;
+    min-width: 300px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 1050;
+  }
+  #dropdownNotification .dropdown-menu {
+    min-width: 352px !important;
+  }
+}
+/* ============================================
+   DROPDOWNS
+   ============================================ */
+.dropdown-toggle::after,
+.dropend > .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  min-width: 220px;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu-wide {
+  min-width: 192px;
+}
+
+.dropdown-header {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.2rem 0.5rem;
+}
+
+.dropdown-item {
+  font-size: 0.875rem;
+  font-weight: 500 !important;
+  color: #0f0f0f;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.dropdown-menu > li:hover > .dropdown-item,
+.dropdown-item:hover {
+  color: #754ffe;
+  background-color: #edeff0;
+}
+
+.dropdown-description {
+  font-size: 0.75rem;
+  padding: 0.25rem 1.2rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.dropdown-menu hr {
+  margin: 0.5rem 0;
+  border-color: #9b9c9d;
+}
+
+/* Dropend arrow */
+.dropend > .dropdown-item {
+  padding-right: 2.5rem;
+  position: relative;
+}
+
+.dropend > .dropdown-item::after {
+  content: "\F285";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #2a2a2a;
+  text-shadow:
+    0 0 0.65px currentColor,
+    0 0 0.65px currentColor;
+  transition: color 0.2s ease;
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.dropend:hover > .dropdown-item::after,
+.dropend > .dropdown-item:hover::after {
+  color: #754ffe;
+}
+
+/* Admin button */
+.btn-admin-dropdown {
+  background-color: #754ffe;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-admin-dropdown:hover {
+  background-color: #5a35a3;
+  color: #fff;
+}
+
+/* ============================================
+   THREE-DOTS DROPDOWN
+   ============================================ */
+.three-dot-dropdown {
+  font-size: 20px !important;
+  padding: 0;
+  margin: 0 18px 0 0;
+}
+
+.three-dots-icon {
+  font-weight: 400 !important;
+  padding: 0.3125rem 0.35rem !important;
+  color: #1e293b !important;
+  border-bottom: none !important;
+}
+
+.three-dots-icon i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.three-dots-dropdown-menu {
+  top: 46px !important;
+}
+
+.three-dots-dropdown-item {
+  min-height: 42.6px !important;
+}
+
+.three-dots-line {
+  line-height: 25.2px !important;
+}
+
+/* Three-dots items with icons */
+.dropdown-item-icon {
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item-icon:hover {
+  background-color: #f8fafc;
+}
+
+.dropdown-item-icon .icon-static {
+  height: 20px !important;
+  width: 20px !important;
+  color: #754ffe !important;
+  transition: none;
+}
+
+.dropdown-item-icon .item-title {
+  color: #1e293b;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: none;
+}
+
+.dropdown-item-icon .item-description {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.dropdown-item-icon:hover .item-description {
+  color: #754ffe;
+}
+
+.dropdown-item-icon .badge {
+  font-size: 0.625rem;
+  background-color: #754ffe;
+}
+
+/* ============================================
+   DESKTOP: Hover-driven dropdowns (≥992px)
+   ============================================ */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+  }
+
+  /* Push icons to far right */
+  .navbar > .container-fluid > .d-flex.align-items-center {
+    margin-left: auto !important;
+    order: 10;
+  }
+
+  /* Top-level dropdown menus */
+  .navbar-nav .dropdown > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition:
+      opacity 0.22s ease,
+      transform 0.22s ease,
+      visibility 0.22s ease;
+    margin-top: 0 !important;
+    padding-top: 0.5rem;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  /* Invisible hover bridge */
+  .navbar-nav .dropdown > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Dropend submenus — NO transform to avoid conflict with Bootstrap's inline left:100% */
+  .navbar-nav .dropend > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: none !important;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+    top: 0 !important;
+    left: 100% !important;
+    margin-left: 0.25rem !important;
+    margin-top: 0 !important;
+    pointer-events: none;
+    position: absolute !important;
+  }
+
+  /* Invisible hover bridge for submenus */
+  .navbar-nav .dropend > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 8px;
+    height: 100%;
+  }
+
+  .navbar-nav .dropend:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none !important;
+    pointer-events: auto;
+  }
+}
+
+/* ============================================
+   MOBILE: Click-driven dropdowns (≤991px)
+   ============================================ */
+@media (max-width: 991px) {
+  /* Layout */
+  .navbar > .container-fluid {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .navbar > .container-fluid > .d-flex.align-items-center {
+    order: 2;
+    margin-left: auto !important;
+    margin-right: 0.25rem !important;
+  }
+
+  .navbar-toggler {
+    order: 3;
+  }
+
+  /* .navbar must NOT be a positioning context on mobile —
+     !important overrides Bootstrap's own position:relative on .navbar */
+  .navbar {
+    position: static !important;
+  }
+
+  /* Remove fixed height so navbar grows naturally when collapse expands */
+  .nav-container-fluid {
+    height: auto;
+  }
+
+  /* Collapse panel */
+  .navbar-collapse {
+    order: 4;
+    flex-basis: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 0.5rem;
+    padding: 0;
+    position: static;
+  }
+
+  .navbar-collapse.collapsing {
+    transition: height 0.3s ease !important;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    animation: none;
+  }
+
+  /* Nav structure — full width at every level */
+  .navbar-nav {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: static !important;
+  }
+
+  .navbar-nav > .nav-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0;
+    position: static !important;
+    width: 100%;
+  }
+
+  .navbar-nav > .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  /* .dropdown div must also be full width */
+  .navbar-nav > .nav-item > .dropdown {
+    position: static !important;
+    width: 100%;
+    display: block;
+  }
+
+  /* Fix 2: Top-level nav-links — text left, chevron right
+     Override the global padding from .navbar-nav .nav-link */
+  .navbar-nav > .nav-item > .dropdown > .nav-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    margin: 0 !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+
+  .navbar-nav > .nav-item > .dropdown > .nav-link span {
+    flex: 1;
+    text-align: left;
+  }
+
+  .navbar-nav > .nav-item > .dropdown > .nav-link .bi-chevron-down {
+    margin: 0 0 0 auto !important;
+    flex-shrink: 0;
+  }
+
+  /* Fix 3: ALL dropdown menus full width in-flow */
+  .navbar-nav .dropdown-menu {
+    display: none !important;
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-top: 1px solid #e2e8f0 !important;
+    border-radius: 0 !important;
+    background-color: #f8fafc !important;
+    margin: 0 !important;
+    padding: 0.25rem 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+    pointer-events: auto !important;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: block !important;
+  }
+
+  /* Fix 1: Dropend menus
+     Bootstrap adds .show to BOTH the .dropend <li> AND the .dropdown-menu <ul>
+     We need both selectors to beat the base display:none rule */
+  .navbar-nav .dropend > .dropdown-menu {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    background-color: #eef2f7 !important;
+    padding: 0.25rem 0 0.25rem 1.5rem !important;
+    border-left: 3px solid #cbd5e1 !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  /* Both ways Bootstrap can mark a dropend open */
+  .navbar-nav .dropend.show > .dropdown-menu,
+  .navbar-nav .dropend > .dropdown-menu.show {
+    display: block !important;
+  }
+
+  /* Dropend arrow — inline for mobile */
+  .navbar-nav .dropend > .dropdown-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .navbar-nav .dropend > .dropdown-item::after {
+    position: static !important;
+    margin-left: auto;
+    transform: none !important;
+    top: auto !important;
+    right: auto !important;
+    flex-shrink: 0;
+  }
+
+  /* Search bar */
+  form[role="search"] {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes slideFromNav {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   SEARCH INPUT
+   ============================================ */
+.search-input {
+  border: 0.8px solid rgb(203, 213, 225) !important;
+  border-radius: 6px !important;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  width: 100%;
+  background-color: #f8fafc;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.search-input:focus {
+  background-color: #fff;
+  border: 0.8px !important;
+  border-color: rgba(117, 79, 254, 0.25);
+  outline: none;
+  box-shadow:
+    0 0 0 1px rgba(117, 79, 254, 0.2),
+    0 0 20px 8px rgba(117, 79, 254, 0.12) !important;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+.search-input {
+  padding-left: 40px !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  color: #64748b;
+  stroke: #64748b;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-section {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: 0.375rem;
+}
+
+.btn-buy-now {
+  min-width: 100px;
+  margin: 32px 32px 32px 32px !important;
+  padding: 8px 16px !important;
+}
+
+.btn-float-button {
+  position: fixed;
+  bottom: -7px;
+  right: 51px;
+  z-index: 999;
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+.badge-brand {
+  background-color: var(--brand-color) !important;
+}
+
+/* ============================================
+   ICONS
+   ============================================ */
+.icon svg {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.125em;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  color: rgb(193 129 54);
+  background: rgb(255 238 218);
+}
+
+.fe-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.icon-primary {
+  color: rgb(117, 79, 254);
+}
+
+.star-icon {
+  fill: #ffc107;
+}
+
+.bookmark {
+  color: var(--brand-color);
+}
+
+.bookmark:hover {
+  text-shadow: #94a3b8;
+}
+
+/* ============================================
+   AVATARS
+   ============================================ */
+.avatar-sm {
+  height: 23px;
+  width: 23px;
+  object-fit: cover;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.feature-title {
+  color: #1e293b;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+.card .card-body {
+  color: #64748b;
+}
+
+.card-course-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: start;
+  text-decoration: none;
+  color: #1e293b;
+}
+
+.card-course-title:hover {
+  color: #754ffe;
+}
+
+.card-body .price {
+  color: #1e293b;
+  font-size: 14px;
+}
+.card-instructor-name {
+  color: rgb(100, 116, 139);
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================
+   PRODUCT SLIDER
+   ============================================ */
+.product-slider {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding-top: 0;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-bottom: 32px;
+}
+
+/* Slick Slides */
+.product-slider .slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.product-slider .slick-slide {
+  height: auto !important;
+  display: flex !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-slider .slick-slide > div {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+/* Product Cards */
+.product-slider .card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+  margin: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-slider .card:hover {
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.1),
+    0 0 12px 4px rgba(117, 79, 254, 0.08);
+  transform: translateY(-3px);
+}
+
+.product-slider .card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-slider .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: start;
+}
+
+.product-slider .card-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.product-slider .card-footer {
+  max-height: 56px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-color: rgb(226, 232, 240) !important;
+  background-color: #fff;
+}
+
+/* Slider Navigation Arrows */
+.product-slider .slick-prev,
+.product-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.product-slider .slick-prev:before,
+.product-slider .slick-next:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #94a3b8;
+  border-right: 2px solid #94a3b8;
+  transform: rotate(225deg);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-slider .slick-next:before {
+  transform: rotate(45deg);
+}
+
+.product-slider .slick-prev:hover,
+.product-slider .slick-next:hover {
+  background: #754ffe;
+}
+
+.product-slider .slick-prev:hover:before,
+.product-slider .slick-next:hover:before {
+  border-color: #fff;
+}
+
+.product-slider .slick-prev {
+  left: -50px;
+}
+
+.product-slider .slick-next {
+  right: -50px;
+}
+
+/* Slider Responsive */
+@media (max-width: 991px) {
+  .product-slider {
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .product-slider .slick-prev,
+  .product-slider .slick-next {
+    top: auto !important;
+    bottom: 0 !important;
+    transform: none !important;
+  }
+
+  .product-slider .slick-prev {
+    left: calc(50% - 50px) !important;
+  }
+
+  .product-slider .slick-next {
+    right: calc(50% - 50px) !important;
+  }
+
+  .product-slider .slick-slide {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-slider .slick-slide {
+    padding: 5px;
+  }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  color: #475569;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer {
+  background: transparent !important;
+  color: #475569;
+  padding: 0.5rem 0;
+  border: none;
+}
+
+.footer .row {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 47.2px;
+}
+
+.footer .col {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-nav-bar .nav-link {
+  color: #475569;
+  transition: color 0.3s;
+}
+
+.bottom-nav-bar .nav-link:hover {
+  color: #754ffe;
+  text-decoration: underline;
+}
+
+.nav-footer,
+.badge-footer {
+  padding-top: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .bottom-nav-bar {
+    flex-wrap: nowrap;
+  }
+}
