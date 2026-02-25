@@ -1,0 +1,2590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geeks React</title>
+    <link rel="icon" type="image/svg+xml" href="" />
+    <!-- CSS only in head, -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/Assets/css/style.css" />
+  </head>
+  <body>
+    <header><nav class="navbar navbar-expand-lg mt-0 px-2  ">
+        <div class="container-fluid mt-0 px-0 ps-2 nav-container-fluid">
+          <a class="navbar-brand logo-img-body" href="#">
+            <img
+              src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg"
+              alt="logo"
+              class="logo-img"
+            />
+          </a>
+          <div class="d-flex align-items-center gap-0 ms-auto me-2">
+              <button
+                class="btn mode-toggle nav-icon-circle rounded-circle "
+                id="themeToggle"
+              >
+                <i class="bi bi-sun-fill icon-link mode-icon"></i>
+              </button>
+
+              <div class="position-relative ms-2 dropdown" id="dropdownNotification">
+  <span class="nav-icon-circle bell"  data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
+    <i data-feather="bell" class="icon-link"></i>
+    <span class="notification-badge bg-primary"></span>
+  </span>
+  
+
+  <div
+    aria-labelledby="dropdownNotification"
+    data-bs-popper="static"
+    class="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end mt-3 py-0 dropdown-menu"
+  >
+    <div class="border-bottom px-3 pt-3 pb-3 d-flex justify-content-between align-items-end">
+      <span class="text-md fw-semibold mb-0 ">Notifications</span>
+      <a class="text-muted" href="#">
+        <span class="align-middle"><i data-feather="settings" class="text-hover settings-icon text-fade me-1"></i></span>
+      </a>
+    </div>
+
+    <div class="notification-scroll">
+      <div class="list-group list-group-flush">
+
+        <div class="bg-light list-group-item">
+          <div class="row">
+            <div class="col">
+              <a class="text-decoration-none" href="#">
+                <div class="d-flex">
+                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                    <span class="text-xs text-muted">
+                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>2 hours ago</span>
+                      <span class="ms-1">2:19 PM</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center me-2 col-auto">
+              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white list-group-item">
+          <div class="row">
+            <div class="col">
+              <a class="text-decoration-none" href="#">
+                <div class="d-flex">
+                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                    <span class="text-xs text-muted">
+                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                      <span class="ms-1">2:19 PM</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center me-2 col-auto">
+              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+            </div>
+          </div>
+        </div>
+         <div class="bg-white list-group-item">
+          <div class="row">
+            <div class="col">
+              <a class="text-decoration-none" href="#">
+                <div class="d-flex">
+                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                    <span class="text-xs text-muted">
+                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                      <span class="ms-1">2:19 PM</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center me-2 col-auto">
+              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+            </div>
+          </div>
+        </div>
+         <div class="bg-white list-group-item">
+          <div class="row">
+            <div class="col">
+              <a class="text-decoration-none" href="#">
+                <div class="d-flex">
+                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                    <span class="text-xs text-muted">
+                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                      <span class="ms-1">2:19 PM</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center me-2 col-auto">
+              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+            </div>
+          </div>
+        </div>
+         <div class="bg-white list-group-item">
+          <div class="row">
+            <div class="col">
+              <a class="text-decoration-none" href="#">
+                <div class="d-flex">
+                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                    <span class="text-xs text-muted">
+                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                      <span class="ms-1">2:19 PM</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="text-center me-2 col-auto">
+              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+    </div>
+
+    <div class="border-top px-3 pt-3 pb-3">
+      <a class="text-decoration-none text-hover text-fade text-sm fw-semi-bold" href="#">See all Notifications</a>
+    </div>
+  </div>
+</div>
+
+              <div class="dropdown" id="dropdownUser">
+  <a
+    href="#"
+    class="d-flex align-items-center text-decoration-none ms-2"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <img
+      src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+      class="rounded-circle"
+      width="40"
+      height="40"
+      alt="profile"
+    />
+  </a>
+
+  <div
+    aria-labelledby="dropdownUser"
+    data-bs-popper="static"
+    class="dashboard-dropdown dropdown-menu-end mt-4 py-0 dropdown-menu"
+  >
+    <a class="mt-3 dropdown-item" href="#">
+      <div class="d-flex">
+        <div class="avatar avatar-md avatar-indicators avatar-online">
+          <img
+            alt="avatar"
+            src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+            class="rounded-circle"
+            width="40"
+            height="40"
+          />
+        </div>
+        <div class="ms-3 lh-1">
+          <h5 class="mb-1 text-sm fw-semibold">Annette Black</h5>
+          <p class="mb-0 text-muted text-sm">annette@geeksui.com</p>
+        </div>
+      </div>
+    </a>
+
+    <div class="dropdown-divider" role="separator"></div>
+
+    <a class="dropdown-item" href="#">
+      <i data-feather="user" class="fe-icon me-2"></i> Profile
+    </a>
+    <a class="dropdown-item" href="#">
+      <i data-feather="star" class="fe-icon me-2"></i> Subscription
+    </a>
+    <a class="dropdown-item" href="#">
+      <i data-feather="settings" class="fe-icon me-2"></i> Settings
+    </a>
+
+    <div class="dropdown-divider" role="separator"></div>
+
+    <a class="mb-3 dropdown-item" href="#">
+      <i data-feather="power" class="fe-icon me-2"></i> Sign Out
+    </a>
+  </div>
+</div>
+            </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav">
+              <ul class="navbar-nav mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center ms-0"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span class="nav-text">Browse</span>
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item nav-text"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Web Development</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Bootstrap</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">React</a></li>
+                          <li><a class="dropdown-item" href="#">GraphQl</a></li>
+                          <li><a class="dropdown-item" href="#">Gatsby</a></li>
+                          <li><a class="dropdown-item" href="#">Grunt</a></li>
+                          <li><a class="dropdown-item" href="#">Svelte</a></li>
+                          <li><a class="dropdown-item" href="#">Meteor</a></li>
+                          <li><a class="dropdown-item" href="#">HTML5</a></li>
+                          <li><a class="dropdown-item" href="#">Angular</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Design</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Graphic Design</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Illustrator</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">UI/UX Design</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Figma</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Adobe XD</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sketch</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Icon Design</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Photoshop</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Mobile App</a></li>
+                      <li><a class="dropdown-item" href="#">IT Software</a></li>
+                      <li><a class="dropdown-item" href="#">Marketing</a></li>
+                      <li><a class="dropdown-item" href="#">Music</a></li>
+                      <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                      <li><a class="dropdown-item" href="#">Business</a></li>
+                      <li><a class="dropdown-item" href="#">Photography</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Landings</span>
+                      <i class="bi bi-chevron-down ms-2 mt-1"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <h2 class="dropdown-header mb-1">Landings</h2>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Home Abroad
+                          <span class="ms-1 badge badge-brand">New</span></a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Home Learning Platform
+                          <span class="ms-1 badge badge-brand">New</span></a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Home Mentor</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Home Education</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Home Academy</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Home Courses</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Home SaaS</a></li>
+                      <hr class="mx-4" role="separator" />
+                      <li>
+                        <a class="dropdown-item" href="#">Lead Courses</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Request Access</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Job Posting</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Pages</span>
+                      <i class="bi bi-chevron-down ms-2 mt-1"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Courses</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Course Single</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Course v2</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Course Resume</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Course Category</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Course Checkout</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Course List/Grid</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Add New Course</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Path</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Browse Path</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Path Single</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Blog</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Listing</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Category</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Career</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Overview</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Listing</a></li>
+                          <li><a class="dropdown-item" href="#">Opening</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Portfolio</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">List</a></li>
+                          <li><a class="dropdown-item" href="#">Single</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Mentor</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Home List</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">List</a></li>
+                          <li><a class="dropdown-item" href="#">Single</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Jobs</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Home</a></li>
+                          <li><a class="dropdown-item" href="#">List</a></li>
+                          <li><a class="dropdown-item" href="#">Grid</a></li>
+                          <li><a class="dropdown-item" href="#">Single</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Company List</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Company Single</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Speciality</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Coming Soon</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Error 404</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Maintenance Mode</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Terms & conditions</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <hr class="mx-3" />
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Help Center</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Help Center</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">FAQ'S</a></li>
+                          <li><a class="dropdown-item" href="#">Guide</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Guide Single</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Pricing</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Compare Plan</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="nav-link dropdown-toggle d-flex align-items-center"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Accounts</span>
+                      <i class="bi bi-chevron-down ms-2 mt-1"></i>
+
+                    </a>
+                    <ul class="dropdown-menu">
+                      <h2 class="dropdown-header mb-1">ACCOUNTS</h2>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Instructor</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-wide">
+                          <h5 class="dropdown-header mb-2">INSTRUCTOR</h5>
+                          <p
+                            class="dropdown-text mb-0 text-wrap dropdown-description"
+                          >
+                            Instructor dashboard for manage courses and earning.
+                          </p>
+                          <hr class="mx-3" />
+                          <li>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">My Courses</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Orders</a></li>
+                          <li><a class="dropdown-item" href="#">Reviews</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Students</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Payouts</a></li>
+                          <li><a class="dropdown-item" href="#">Earning</a></li>
+                          <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Quiz</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Quiz</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Attempt</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Start</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Result</a
+                            >
+                          </li>
+                          
+                        </ul>
+                      </li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Students</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-wide">
+                          <h5 class="dropdown-header mb-2">STUDENTS</h5>
+                          <p
+                            class="dropdown-text mb-0 text-wrap dropdown-description"
+                          >
+                            Students dashboard to manage your courses and subscriptions.
+                          </p>
+                          <hr class="mx-3" />
+                          <li>
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Payments</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Billing Info</a></li>
+                          <li><a class="dropdown-item" href="#">Invoice</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Invoice Details</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Bookmarked</a></li>
+                          <li><a class="dropdown-item" href="#">My Path</a></li>
+                          <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Quiz</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">Quiz</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Attempt</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Start</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Result</a
+                            >
+                          </li>
+                          
+                        </ul>
+                      </li>
+                        </ul>
+                      </li>
+                                            <li class="dropend">
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          >Admin</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-wide">
+                          <h5 class="dropdown-header mb-2">MASTER ADMIN</h5>
+                          <p
+                            class="dropdown-text mb-0 text-wrap dropdown-description"
+                          >
+                            Master admin dashboard to manage courses, user, site setting, and work with amazing apps.
+                          </p>
+                          <hr class="mx-3" />
+                       <div class="d-grid  mt-3 px-3">
+      <a href="#" class="btn btn-sm btn-admin-dropdown">
+        Go to Dashboard
+      </a>
+    </div>
+                     
+                        </ul>
+                        <hr class="mx-4" role="separator" />
+                      </li>
+                        <a class="dropdown-item" href="#">Sign In</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sign Up</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Forgot Password</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                      
+                      <li>
+                        <a class="dropdown-item" href="#">Security</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Social Profiles</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Notification</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Delete Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Linked Accounts</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+  <div class="dropdown three-dot-dropdown">
+    
+    <!-- Dropdown Toggle -->
+    <a
+  class="nav-link three-dots-icon"
+  href="#"
+  data-bs-toggle="dropdown"
+>
+  <i class="bi bi-three-dots"></i>
+</a>
+
+    <!-- Dropdown Menu -->
+    <div
+      class="dropdown-menu three-dots-dropdown-menu py-3"
+      data-bs-popper="static"
+    >
+      
+      <!-- Documentation -->
+      <a
+        href="#"
+        class="py-2 px-3 dropdown-item dropdown-item-icon "
+      >
+        <div class="d-flex align-items-center three-dots-dropdown-item">
+          <i data-feather="file-text" class="fs-3 text-primary-custom icon-static"></i>
+          <div class="ms-3 three-dots-line">
+            <h5 class="mb-0 item-title">Documentation</h5>
+            <p class="mb-0  item-description">
+              Browse all documentation
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Snippets -->
+      <a
+        href="#"
+        class="py-2 px-3 dropdown-item dropdown-item-icon"
+      >
+        <div class="d-flex align-items-center three-dots-dropdown-item">
+          <i class="bi bi-files fs-5 text-primary-custom icon-static"></i>
+          <div class="ms-3  three-dots-line">
+            <h5 class="mb-0 item-title">
+              Snippets <span class="badge">New</span>
+            </h5>
+            <p class="mb-0 item-description">Bunch of Snippet</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Changelog -->
+      <a
+        href="#"
+        class="py-2 px-3 dropdown-item dropdown-item-icon three-dots-dropdown-item"
+      >
+        <div class="d-flex align-items-center">
+          <i data-feather="layers" class="fs-3 text-primary-custom icon-static"></i>
+          <div class="ms-3 three-dots-line">
+            <h5 class="mb-0 item-title">
+              Changelog
+              <span class="text-primary-custom ms-1">v3.1.0</span>
+            </h5>
+            <p class="mb-0 item-description">See what's new</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+
+              </ul>
+            </div>
+            <form class="d-flex" role="search">
+              <div class="position-relative w-100">
+                <i data-feather="search" class="search-icon"></i>
+                <input
+                  class="form-control ps-5 shadow-sm search-input"
+                  type="search"
+                  placeholder="Search Courses"
+                />
+              </div>
+            </form>
+
+            
+          </div>
+        </div>
+      </nav></header>
+    <main>
+      <section class="section-hero" aria-label="Additional-info-section">
+        <div class="container">
+          <div class="align-items-center g-0 row">
+            <div class="col-xl-5 col-lg-6 col-md-12">
+              <div class="py-4 py-lg-0">
+                <h1 class="hero-title">
+                  Welcome to Geeks UI Learning Application
+                </h1>
+                <p class="text-white-50 mb-4 hero-subtitle">
+                  Hand-picked Instructor and expertly crafted courses, designed
+                  for the modern students and entrepreneur
+                </p>
+                <a href="#" class="btn btn-dark rounded-2 btn-section-hero-left"
+                  >Browse Courses</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-light rounded-2 btn-section-hero-right"
+                  >Are You instructor?</a
+                >
+              </div>
+            </div>
+            <div class="text-lg-end text-center col-xl-7 col-lg-6 col-md-12">
+              <img
+                src="https://geeks-react.netlify.app/static/media/hero-img.c1489dfacfd7fadae59a.png"
+                alt="section-image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white py-4 mb-0 shadow-sm feature-section">
+        <div class="container">
+          <div class="align-items-center g-0 row">
+            <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+              <div class="d-flex align-items-center">
+                <span
+                  class="d-inline-flex align-items-center justify-content-center rounded-circle icon-circle"
+                >
+                  <i data-feather="video" class="feather-icon fe-icon"></i>
+                </span>
+
+                <div class="ms-3">
+                  <h4 class="mb-0 fw-semibold feature-title">
+                    30,000 online courses
+                  </h4>
+                  <p class="mb-0 text-black-50 text-sm">
+                    Enjoy a variety of fresh topics
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+              <div class="d-flex align-items-center">
+                <span
+                  class="d-inline-flex align-items-center justify-content-center rounded-circle icon-circle"
+                >
+                  <i data-feather="users" class="feather-icon fe-icon"></i>
+                </span>
+
+                <div class="ms-3">
+                  <h4 class="mb-0 fw-semibold feature-title">
+                    Expert instruction
+                  </h4>
+                  <p class="mb-0 text-black-50 text-sm">
+                    Find the right instructor for you
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
+              <div class="d-flex align-items-center">
+                <span
+                  class="d-inline-flex align-items-center justify-content-center rounded-circle icon-circle"
+                >
+                  <i data-feather="clock" class="feather-icon fe-icon"></i>
+                </span>
+
+                <div class="ms-3">
+                  <h4 class="mb-0 fw-semibold feature-title">
+                    Lifetime access
+                  </h4>
+                  <p class="mb-0 text-black-50 text-sm">
+                    Learn on your schedule
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="custom-section-first">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col">
+              <h2 class="mb-0 mx-2 section-heading">Recommended to you</h2>
+            </div>
+          </div>
+
+          <div class="product-slider">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >A Complete Beginner's Guide to Javascript</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                  <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >GraphQL, Learn GraphQL in an intuitive way</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Node js, a complete tutorial</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer justify-content-between align-items-center mt-auto"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark" class="ms-auto">
+                  <i data-feather="bookmark" class="fe-icon bookmark"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Laravell, The Utimate Guide</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-react.999d5d4b7ef4771200c2.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Learn REACT interactively</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="custom-section-middle">
+        <div class="container">
+          <div class="row pb-lg-2">
+            <div class="col">
+              <h2 class="section-heading">Trending</h2>
+            </div>
+          </div>
+          <div class="product-slider">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >A Complete Beginner's Guide to Javascript</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >GraphQL, Learn GraphQL in an intuitive way</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Node js, a complete tutorial</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer justify-content-between align-items-center mt-auto"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark" class="ms-auto">
+                  <i data-feather="bookmark" class="fe-icon bookmark"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Laravell, The Utimate Guide</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-react.999d5d4b7ef4771200c2.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Learn REACT interactively</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="last-custom-section">
+        <div class="container">
+          <div class="row pb-lg-2">
+            <div class="col">
+              <h2 class="section-heading">Most Popular</h2>
+            </div>
+          </div>
+          <div class="product-slider">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >A Complete Beginner's Guide to Javascript</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-graphql.f5dec42e4ae0102ebffa.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >GraphQL, Learn GraphQL in an intuitive way</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-node.291fe1cded8ebab181ab.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Node js, a complete tutorial</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer justify-content-between align-items-center mt-auto"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark" class="ms-auto">
+                  <i data-feather="bookmark" class="fe-icon bookmark"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-laravel.48ab426cd3f0adc40dd9.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Laravell, The Utimate Guide</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <a href="#">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/course-react.999d5d4b7ef4771200c2.jpg"
+                  alt="img"
+                  class="card-img"
+                />
+              </a>
+
+              <div class="card-body align-content-start p-6">
+                <h3 class="h4 mb-2 text-truncate-line-2 card-course-title">
+                  <a href="#" class="card-title text-decoration-none"
+                    >Learn REACT interactively</a
+                  >
+                </h3>
+
+                <div class="card-text">
+                  <span class="icon text-sm">
+                    <i data-feather="clock"></i> 4h 30min
+                    <i data-feather="bar-chart" class="icon-primary"></i>
+                    Advance
+                  </span>
+                </div>
+
+                <div class="card-text mt-3 lh-1">
+                   <span class="text-warning me-1 mb-1"
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg
+                                  ><svg
+                                    viewBox="0 0 24 24"
+                                    role="presentation"
+                                    style="width: 0.92rem; height: 0.92rem"
+                                  >
+                                    <path
+                                      d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                      style="fill: currentcolor"
+                                    ></path></svg></span
+                  ><span class="text-warning me-1 text-sm"> 4.0</span>
+                  <span class="text-xs">(1500)</span>
+                </div>
+
+                <div class="card-text mt-3 mb-3 lh-1">
+                  <span class="fw-bold price">$500</span>
+                  <span class="text-muted text-decoration-line-through text-xs"
+                    >$600</span
+                  >
+                </div>
+              </div>
+              <div
+                class="card-footer d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center me-2">
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                    alt="User-Image"
+                    class="rounded-circle avatar-sm me-2"
+                  />
+                  <span class="text-sm card-instructor-name">Brooklyn Simons</span>
+                </div>
+                <a href="#" title="Add to bookmark">
+                  <i
+                    data-feather="bookmark"
+                    class="fe-icon bookmark ms-auto"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-transparent mt-auto p-0">
+      <!-- Buy Now button -->
+      <a href="#" class="btn btn-dark btn-float-button m-3 p-2 btn-buy-now">
+        <span class="icon icon-lg text-white fw-semibold">
+          <i class="bi bi-cart3"></i> Buy Now
+        </span>
+      </a>
+
+      <div class="container">
+        <div
+          class="row align-items-center g-0 pt-0 border-top flex-column flex-md-row badge-footer"
+        >
+          <!-- Left: copyright -->
+          <div
+            class="col d-flex justify-content-center justify-content-md-start mb-2 mb-md-0 "
+          >
+            <span class="text-sm">© 2024 Geeks. All Rights Reserved.</span>
+          </div>
+
+          <!-- Right: nav links -->
+          <div
+            class="col d-flex justify-content-center justify-content-md-end nav-footer"
+          >
+            <nav class="nav bottom-nav-bar">
+              <a
+                href="#"
+                class="nav-link bottom-nav text-sm text-decoration-none"
+                >Privacy</a
+              >
+              <a
+                href="#"
+                class="nav-link bottom-nav text-sm text-decoration-none"
+                >Terms</a
+              >
+              <a
+                href="#"
+                class="nav-link bottom-nav text-sm text-decoration-none"
+                >Feedback</a
+              >
+              <a
+                href="#"
+                class="nav-link bottom-nav text-sm text-decoration-none"
+                >Support</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- 1. jQuery (for Slick) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- 2. Slick -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- 3. Bootstrap Bundle (ONCE, here only) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 4. Feather -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- 5. Custom -->
+  <script>
+      $(document).ready(function () {
+        $(".product-slider").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false,
+          infinite: true,
+          autoplay: false,
+          autoplaySpeed: 3000,
+          responsive: [
+            { breakpoint: 991, settings: { slidesToShow: 2 } },
+            { breakpoint: 576, settings: { slidesToShow: 1 } },
+          ],
+        });
+      });
+    </script>
+  <script>
+    feather.replace();
+  </script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // On mobile, handle dropend clicks manually since Bootstrap
+    // applies inline style="display:none" that CSS !important can't override
+    document.querySelectorAll('.navbar-nav .dropend > [data-bs-toggle="dropdown"]').forEach(function (trigger) {
+      trigger.addEventListener('click', function (e) {
+        if (window.innerWidth < 992) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const menu = this.nextElementSibling;
+          const parentLi = this.closest('.dropend');
+          const isOpen = menu.style.display === 'block';
+
+          // Close all other open dropends at this level
+          const siblings = parentLi.parentElement.querySelectorAll('.dropend > .dropdown-menu');
+          siblings.forEach(function (m) {
+            m.style.display = 'none';
+            m.closest('.dropend').classList.remove('show');
+          });
+
+          // Toggle this one
+          if (!isOpen) {
+            menu.style.display = 'block';
+            parentLi.classList.add('show');
+          }
+        }
+      });
+    });
+  });
+</script>
+    
+  </body>
+</html>
