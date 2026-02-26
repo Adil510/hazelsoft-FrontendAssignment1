@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geeks React</title>
     <link rel="icon" type="image/svg+xml" href="" />
-    <!-- CSS only in head, -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -20,10 +19,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/Assets/css/navbar.css">
   <link rel="stylesheet" href="/Assets/css/style.css" />
+  <link rel="stylesheet" href="/Assets/css/footer.css">
   </head>
   <body>
-    <header><nav class="navbar navbar-expand-lg mt-0 px-2  ">
+    <header>
+      <nav class="navbar navbar-expand-lg mt-0 px-2  ">
         <div class="container-fluid mt-0 px-0 ps-2 nav-container-fluid">
           <a class="navbar-brand logo-img-body" href="#">
             <img
@@ -32,7 +34,7 @@
               class="logo-img"
             />
           </a>
-          <div class="d-flex align-items-center gap-0 ms-auto me-2">
+          <div class="d-flex align-items-center gap-0 ms-auto me-2 nav-icon-group">
               <button
                 class="btn mode-toggle nav-icon-circle rounded-circle "
                 id="themeToggle"
@@ -41,218 +43,205 @@
               </button>
 
               <div class="position-relative ms-2 dropdown" id="dropdownNotification">
-  <span class="nav-icon-circle bell"  data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
-    <i data-feather="bell" class="icon-link"></i>
-    <span class="notification-badge bg-primary"></span>
-  </span>
-  
+                <span class="nav-icon-circle bell"  data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
+                  <i data-feather="bell" class="icon-link"></i>
+                  <span class="notification-badge bg-primary"></span>
+                </span>
+                <div
+                  aria-labelledby="dropdownNotification"
+                  data-bs-popper="static"
+                  class="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end mt-3 py-0 dropdown-menu"
+                >
+                  <div class="border-bottom px-3 pt-3 pb-3 d-flex justify-content-between align-items-end">
+                    <span class="text-md fw-semibold mb-0 ">Notifications</span>
+                    <a class="text-muted" href="#">
+                      <span class="align-middle"><i data-feather="settings" class="text-hover settings-icon text-fade me-1"></i></span>
+                    </a>
+                  </div>
 
-  <div
-    aria-labelledby="dropdownNotification"
-    data-bs-popper="static"
-    class="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end mt-3 py-0 dropdown-menu"
-  >
-    <div class="border-bottom px-3 pt-3 pb-3 d-flex justify-content-between align-items-end">
-      <span class="text-md fw-semibold mb-0 ">Notifications</span>
-      <a class="text-muted" href="#">
-        <span class="align-middle"><i data-feather="settings" class="text-hover settings-icon text-fade me-1"></i></span>
-      </a>
-    </div>
+                  <div class="notification-scroll">
+                    <div class="list-group list-group-flush">
 
-    <div class="notification-scroll">
-      <div class="list-group list-group-flush">
-
-        <div class="bg-light list-group-item">
-          <div class="row">
-            <div class="col">
-              <a class="text-decoration-none" href="#">
-                <div class="d-flex">
-                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
-                  <div class="ms-3">
-                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
-                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
-                    <span class="text-xs text-muted">
-                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>2 hours ago</span>
-                      <span class="ms-1">2:19 PM</span>
-                    </span>
+                      <div class="bg-light list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-decoration-none" href="#">
+                              <div class="d-flex">
+                                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                                <div class="ms-3">
+                                  <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                                  <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                                  <span class="text-xs text-muted">
+                                    <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>2 hours ago</span>
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="text-center me-2 col-auto">
+                            <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-decoration-none" href="#">
+                              <div class="d-flex">
+                                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                                <div class="ms-3">
+                                  <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                                  <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                                  <span class="text-xs text-muted">
+                                    <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="text-center me-2 col-auto">
+                            <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-decoration-none" href="#">
+                              <div class="d-flex">
+                                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                                <div class="ms-3">
+                                  <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                                  <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                                  <span class="text-xs text-muted">
+                                    <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="text-center me-2 col-auto">
+                            <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-decoration-none" href="#">
+                              <div class="d-flex">
+                                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                                <div class="ms-3">
+                                  <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                                  <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                                  <span class="text-xs text-muted">
+                                    <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="text-center me-2 col-auto">
+                            <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white list-group-item">
+                        <div class="row">
+                          <div class="col">
+                            <a class="text-decoration-none" href="#">
+                              <div class="d-flex">
+                                <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
+                                <div class="ms-3">
+                                  <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
+                                  <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
+                                  <span class="text-xs text-muted">
+                                    <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
+                                    <span class="ms-1">2:19 PM</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="text-center me-2 col-auto">
+                            <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-top px-3 pt-3 pb-3">
+                    <a class="text-decoration-none text-hover text-fade text-sm fw-semi-bold" href="#">See all Notifications</a>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="text-center me-2 col-auto">
-              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white list-group-item">
-          <div class="row">
-            <div class="col">
-              <a class="text-decoration-none" href="#">
-                <div class="d-flex">
-                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
-                  <div class="ms-3">
-                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
-                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
-                    <span class="text-xs text-muted">
-                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
-                      <span class="ms-1">2:19 PM</span>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="text-center me-2 col-auto">
-              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
-            </div>
-          </div>
-        </div>
-         <div class="bg-white list-group-item">
-          <div class="row">
-            <div class="col">
-              <a class="text-decoration-none" href="#">
-                <div class="d-flex">
-                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
-                  <div class="ms-3">
-                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
-                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
-                    <span class="text-xs text-muted">
-                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
-                      <span class="ms-1">2:19 PM</span>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="text-center me-2 col-auto">
-              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
-            </div>
-          </div>
-        </div>
-         <div class="bg-white list-group-item">
-          <div class="row">
-            <div class="col">
-              <a class="text-decoration-none" href="#">
-                <div class="d-flex">
-                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
-                  <div class="ms-3">
-                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
-                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
-                    <span class="text-xs text-muted">
-                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
-                      <span class="ms-1">2:19 PM</span>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="text-center me-2 col-auto">
-              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
-            </div>
-          </div>
-        </div>
-         <div class="bg-white list-group-item">
-          <div class="row">
-            <div class="col">
-              <a class="text-decoration-none" href="#">
-                <div class="d-flex">
-                  <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt="" class="avatar-md rounded-circle"/>
-                  <div class="ms-3">
-                    <h5 class="fw-bold text-sm text-decoration-none mb-1">Kristin Watson</h5>
-                    <p class="mb-3 text-sm text-hover text-decoration-none">Krisitn Watsan like your comment on course Javascript Introduction!</p>
-                    <span class="text-xs text-muted">
-                      <span><span class="text-success me-1"><i data-feather="thumbs-up" class="thumbs-up-icon"></i></span>19 Oct,2020</span>
-                      <span class="ms-1">2:19 PM</span>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="text-center me-2 col-auto">
-              <a href="#"><span class="me-2"><span class="badge-dot badge bg-secondary"></span></span></a>
-            </div>
-          </div>
-        </div>
-
-        
-
-
-      </div>
-    </div>
-
-    <div class="border-top px-3 pt-3 pb-3">
-      <a class="text-decoration-none text-hover text-fade text-sm fw-semi-bold" href="#">See all Notifications</a>
-    </div>
-  </div>
-</div>
-
+              </div>
               <div class="dropdown" id="dropdownUser">
-  <a
-    href="#"
-    class="d-flex align-items-center text-decoration-none ms-2"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    <img
-      src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
-      class="rounded-circle"
-      width="40"
-      height="40"
-      alt="profile"
-    />
-  </a>
-
-  <div
-    aria-labelledby="dropdownUser"
-    data-bs-popper="static"
-    class="dashboard-dropdown dropdown-menu-end mt-4 py-0 dropdown-menu"
-  >
-    <a class="mt-3 dropdown-item" href="#">
-      <div class="d-flex">
-        <div class="avatar avatar-md avatar-indicators avatar-online">
-          <img
-            alt="avatar"
-            src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
-            class="rounded-circle"
-            width="40"
-            height="40"
-          />
-        </div>
-        <div class="ms-3 lh-1">
-          <h5 class="mb-1 text-sm fw-semibold">Annette Black</h5>
-          <p class="mb-0 text-muted text-sm">annette@geeksui.com</p>
-        </div>
-      </div>
-    </a>
-
-    <div class="dropdown-divider" role="separator"></div>
-
-    <a class="dropdown-item" href="#">
-      <i data-feather="user" class="fe-icon me-2"></i> Profile
-    </a>
-    <a class="dropdown-item" href="#">
-      <i data-feather="star" class="fe-icon me-2"></i> Subscription
-    </a>
-    <a class="dropdown-item" href="#">
-      <i data-feather="settings" class="fe-icon me-2"></i> Settings
-    </a>
-
-    <div class="dropdown-divider" role="separator"></div>
-
-    <a class="mb-3 dropdown-item" href="#">
-      <i data-feather="power" class="fe-icon me-2"></i> Sign Out
-    </a>
-  </div>
-</div>
-            </div>
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-decoration-none ms-1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+                    class="rounded-circle"
+                    width="40"
+                    height="40"
+                    alt="profile"
+                  />
+                </a>
+                <div
+                  aria-labelledby="dropdownUser"
+                  data-bs-popper="static"
+                  class="dashboard-dropdown dropdown-menu-end mt-4 py-0 dropdown-menu"
+                >
+                  <a class="mt-3 dropdown-item" href="#">
+                    <div class="d-flex">
+                      <div class="avatar avatar-md avatar-indicators avatar-online">
+                        <img
+                          alt="avatar"
+                          src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+                          class="rounded-circle"
+                          width="40"
+                          height="40"
+                        />
+                      </div>
+                      <div class="ms-3 lh-1">
+                        <h5 class="mb-1 text-sm fw-semibold">Annette Black</h5>
+                        <p class="mb-0 text-muted text-sm">annette@geeksui.com</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider" role="separator"></div>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="user" class="fe-icon me-2"></i> Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="star" class="fe-icon me-2"></i> Subscription
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="settings" class="fe-icon me-2"></i> Settings
+                  </a>
+                  <div class="dropdown-divider" role="separator"></div>
+                  <a class="mb-3 dropdown-item" href="#">
+                    <i data-feather="power" class="fe-icon me-2"></i> Sign Out
+                  </a>
+                </div>
+              </div>
+          </div>
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -277,9 +266,7 @@
                           >Web Development</a
                         >
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">Bootstrap</a>
-                          </li>
+                          <li><a class="dropdown-item" href="#">Bootstrap</a></li>
                           <li><a class="dropdown-item" href="#">React</a></li>
                           <li><a class="dropdown-item" href="#">GraphQl</a></li>
                           <li><a class="dropdown-item" href="#">Gatsby</a></li>
@@ -330,7 +317,6 @@
                     </ul>
                   </div>
                 </li>
-
                 <li class="nav-item">
                   <div class="dropdown">
                     <a
@@ -377,7 +363,6 @@
                     </ul>
                   </div>
                 </li>
-
                 <li class="nav-item">
                   <div class="dropdown">
                     <a
@@ -573,7 +558,6 @@
                     </ul>
                   </div>
                 </li>
-
                 <li class="nav-item">
                   <div class="dropdown">
                     <a
@@ -638,7 +622,6 @@
                               >Result</a
                             >
                           </li>
-                          
                         </ul>
                       </li>
                         </ul>
@@ -699,7 +682,7 @@
                       </li>
                         </ul>
                       </li>
-                                            <li class="dropend">
+                      <li class="dropend">
                         <a
                           class="dropdown-item"
                           href="#"
@@ -714,16 +697,16 @@
                             Master admin dashboard to manage courses, user, site setting, and work with amazing apps.
                           </p>
                           <hr class="mx-3" />
-                       <div class="d-grid  mt-3 px-3">
-      <a href="#" class="btn btn-sm btn-admin-dropdown">
-        Go to Dashboard
-      </a>
-    </div>
-                     
+                        <div class="d-grid  mt-3 px-3">
+                          <a href="#" class="btn btn-sm btn-admin-dropdown">
+                            Go to Dashboard
+                          </a>
+                        </div>
                         </ul>
                         <hr class="mx-4" role="separator" />
                       </li>
-                        <a class="dropdown-item" href="#">Sign In</a>
+                      <li>
+                      <a class="dropdown-item" href="#">Sign In</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">Sign Up</a>
@@ -746,95 +729,85 @@
                     </ul>
                   </div>
                 </li>
-
                 <li class="nav-item">
-  <div class="dropdown three-dot-dropdown">
-    
-    <!-- Dropdown Toggle -->
-    <a
-  class="nav-link three-dots-icon"
-  href="#"
-  data-bs-toggle="dropdown"
->
-  <i class="bi bi-three-dots"></i>
-</a>
-
-    <!-- Dropdown Menu -->
-    <div
-      class="dropdown-menu three-dots-dropdown-menu py-3"
-      data-bs-popper="static"
-    >
-      
-      <!-- Documentation -->
-      <a
-        href="#"
-        class="py-2 px-3 dropdown-item dropdown-item-icon "
-      >
-        <div class="d-flex align-items-center three-dots-dropdown-item">
-          <i data-feather="file-text" class="fs-3 text-primary-custom icon-static"></i>
-          <div class="ms-3 three-dots-line">
-            <h5 class="mb-0 item-title">Documentation</h5>
-            <p class="mb-0  item-description">
-              Browse all documentation
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <!-- Snippets -->
-      <a
-        href="#"
-        class="py-2 px-3 dropdown-item dropdown-item-icon"
-      >
-        <div class="d-flex align-items-center three-dots-dropdown-item">
-          <i class="bi bi-files fs-5 text-primary-custom icon-static"></i>
-          <div class="ms-3  three-dots-line">
-            <h5 class="mb-0 item-title">
-              Snippets <span class="badge">New</span>
-            </h5>
-            <p class="mb-0 item-description">Bunch of Snippet</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- Changelog -->
-      <a
-        href="#"
-        class="py-2 px-3 dropdown-item dropdown-item-icon three-dots-dropdown-item"
-      >
-        <div class="d-flex align-items-center">
-          <i data-feather="layers" class="fs-3 text-primary-custom icon-static"></i>
-          <div class="ms-3 three-dots-line">
-            <h5 class="mb-0 item-title">
-              Changelog
-              <span class="text-primary-custom ms-1">v3.1.0</span>
-            </h5>
-            <p class="mb-0 item-description">See what's new</p>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</li>
-
+                  <div class="dropdown three-dot-dropdown">
+                    <a
+                      class="nav-link three-dots-icon"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                     >
+                    <i class="bi bi-three-dots"></i>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div
+                      class="dropdown-menu three-dots-dropdown-menu py-3"
+                      data-bs-popper="static"
+                    >
+                      
+                      <!-- Documentation -->
+                      <a
+                        href="#"
+                        class="py-2 px-3 dropdown-item dropdown-item-icon "
+                      >
+                        <div class="d-flex align-items-center three-dots-dropdown-item">
+                          <i data-feather="file-text" class="fs-3 text-primary-custom icon-static"></i>
+                          <div class="ms-3 three-dots-line">
+                            <h5 class="mb-0 item-title">Documentation</h5>
+                            <p class="mb-0  item-description">
+                              Browse all documentation
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- Snippets -->
+                      <a
+                        href="#"
+                        class="py-2 px-3 dropdown-item dropdown-item-icon"
+                      >
+                        <div class="d-flex align-items-center three-dots-dropdown-item">
+                          <i class="bi bi-files fs-5 text-primary-custom icon-static"></i>
+                          <div class="ms-3  three-dots-line">
+                            <h5 class="mb-0 item-title">
+                              Snippets <span class="badge">New</span>
+                            </h5>
+                            <p class="mb-0 item-description">Bunch of Snippet</p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- Changelog -->
+                      <a
+                        href="#"
+                        class="py-2 px-3 dropdown-item dropdown-item-icon three-dots-dropdown-item"
+                      >
+                        <div class="d-flex align-items-center">
+                          <i data-feather="layers" class="fs-3 text-primary-custom icon-static"></i>
+                          <div class="ms-3 three-dots-line">
+                            <h5 class="mb-0 item-title">
+                              Changelog
+                              <span class="text-primary-custom ms-1">v3.1.0</span>
+                            </h5>
+                            <p class="mb-0 item-description">See what's new</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
               </ul>
-            </div>
-            <form class="d-flex" role="search">
-              <div class="position-relative w-100">
-                <i data-feather="search" class="search-icon"></i>
-                <input
-                  class="form-control ps-5 shadow-sm search-input"
-                  type="search"
-                  placeholder="Search Courses"
-                />
-              </div>
-            </form>
-
-            
           </div>
+          <form class="d-flex" role="search">
+            <div class="position-relative w-100">
+              <i data-feather="search" class="search-icon"></i>
+              <input
+                class="form-control ps-5 shadow-sm search-input"
+                type="search"
+                placeholder="Search Courses"
+              />
+            </div>
+          </form> 
         </div>
-      </nav></header>
+      </nav>
+    </header>
     <main>
       <section class="section-hero" aria-label="Additional-info-section">
         <div class="container">
@@ -848,7 +821,7 @@
                   Hand-picked Instructor and expertly crafted courses, designed
                   for the modern students and entrepreneur
                 </p>
-                <a href="#" class="btn btn-dark rounded-2 btn-section-hero-left"
+                <a href="#" class="btn btn-dark btn-section-hero-left"
                   >Browse Courses</a
                 >
                 <a
@@ -878,7 +851,6 @@
                 >
                   <i data-feather="video" class="feather-icon fe-icon"></i>
                 </span>
-
                 <div class="ms-3">
                   <h4 class="mb-0 fw-semibold feature-title">
                     30,000 online courses
@@ -889,7 +861,6 @@
                 </div>
               </div>
             </div>
-
             <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
               <div class="d-flex align-items-center">
                 <span
@@ -897,7 +868,6 @@
                 >
                   <i data-feather="users" class="feather-icon fe-icon"></i>
                 </span>
-
                 <div class="ms-3">
                   <h4 class="mb-0 fw-semibold feature-title">
                     Expert instruction
@@ -908,7 +878,6 @@
                 </div>
               </div>
             </div>
-
             <div class="mb-lg-0 mb-4 col-xl-4 col-lg-4 col-md-6">
               <div class="d-flex align-items-center">
                 <span
@@ -916,7 +885,6 @@
                 >
                   <i data-feather="clock" class="feather-icon fe-icon"></i>
                 </span>
-
                 <div class="ms-3">
                   <h4 class="mb-0 fw-semibold feature-title">
                     Lifetime access
@@ -937,7 +905,6 @@
               <h2 class="mb-0 mx-2 section-heading">Recommended to you</h2>
             </div>
           </div>
-
           <div class="product-slider">
             <div class="card">
               <a href="#">
@@ -1980,7 +1947,6 @@
                     >A Complete Beginner's Guide to Javascript</a
                   >
                 </h3>
-
                 <div class="card-text">
                   <span class="icon text-sm">
                     <i data-feather="clock"></i> 4h 30min
@@ -1988,7 +1954,6 @@
                     Advance
                   </span>
                 </div>
-
                 <div class="card-text mt-3 lh-1">
                    <span class="text-warning me-1 mb-1"
                                   ><svg
@@ -2039,7 +2004,6 @@
                   ><span class="text-warning me-1 text-sm"> 4.0</span>
                   <span class="text-xs">(1500)</span>
                 </div>
-
                 <div class="card-text mt-3 mb-3 lh-1">
                   <span class="fw-bold price">$500</span>
                   <span class="text-muted text-decoration-line-through text-xs"
@@ -2533,58 +2497,9 @@
   <!-- 4. Feather -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-  <!-- 5. Custom -->
-  <script>
-      $(document).ready(function () {
-        $(".product-slider").slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          arrows: true,
-          dots: false,
-          infinite: true,
-          autoplay: false,
-          autoplaySpeed: 3000,
-          responsive: [
-            { breakpoint: 991, settings: { slidesToShow: 2 } },
-            { breakpoint: 576, settings: { slidesToShow: 1 } },
-          ],
-        });
-      });
-    </script>
-  <script>
+ <script>
     feather.replace();
   </script>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // On mobile, handle dropend clicks manually since Bootstrap
-    // applies inline style="display:none" that CSS !important can't override
-    document.querySelectorAll('.navbar-nav .dropend > [data-bs-toggle="dropdown"]').forEach(function (trigger) {
-      trigger.addEventListener('click', function (e) {
-        if (window.innerWidth < 992) {
-          e.preventDefault();
-          e.stopPropagation();
-
-          const menu = this.nextElementSibling;
-          const parentLi = this.closest('.dropend');
-          const isOpen = menu.style.display === 'block';
-
-          // Close all other open dropends at this level
-          const siblings = parentLi.parentElement.querySelectorAll('.dropend > .dropdown-menu');
-          siblings.forEach(function (m) {
-            m.style.display = 'none';
-            m.closest('.dropend').classList.remove('show');
-          });
-
-          // Toggle this one
-          if (!isOpen) {
-            menu.style.display = 'block';
-            parentLi.classList.add('show');
-          }
-        }
-      });
-    });
-  });
-</script>
-    
+  <script  src="/Assets/js/index-script.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  color: #475569;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer {
+  background: transparent !important;
+  color: #475569;
+  padding: 0.5rem 0;
+  border: none;
+}
+
+.footer .row {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 47.2px;
+}
+
+.footer .col {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-nav-bar .nav-link {
+  color: #475569;
+  transition: color 0.3s;
+}
+
+.bottom-nav-bar .nav-link:hover {
+  color: #754ffe;
+  text-decoration: underline;
+}
+
+.nav-footer,
+.badge-footer {
+  padding-top: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .bottom-nav-bar {
+    flex-wrap: nowrap;
+  }
+}
