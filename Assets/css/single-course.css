@@ -512,6 +512,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   background: #fff;
+  margin-bottom: 24px !important;
   border: 0;
   border-radius: 8px;
   overflow: hidden;

@@ -230,7 +230,7 @@ span.nav-icon-circle.bell {
   max-height: 300px;
   overflow-y: auto;
 }
-.notification-scroll::-webkit-scrollbar-button {
+.notification-scroll::-webkit-scrollbar-thumb {
   display: none;
 }
 #dropdownNotification,
@@ -405,10 +405,17 @@ span.nav-icon-circle.bell {
 }
 
 .three-dots-icon {
-  font-weight: 400 !important;
-  padding: 0.3125rem 0.35rem !important;
   color: #1e293b !important;
   border-bottom: none;
+}
+.navbar-nav > .nav-item > .dropdown > .nav-link.three-dots-icon {
+  padding-top: 4px !important;
+  padding-bottom: 13px !important;
+}
+.three-dots-text {
+  font-size: 16px;
+  font-weight: 800 !important;
+  letter-spacing: 0.55px;
 }
 
 .three-dots-icon i {
@@ -751,6 +758,9 @@ span.nav-icon-circle.bell {
 /* ============================================
    SEARCH INPUT
    ============================================ */
+.navbar form {
+  margin-left: 3.5px !important;
+}
 .search-input {
   border: 0.8px solid rgb(203, 213, 225) !important;
   border-radius: 6px !important;
@@ -761,9 +771,7 @@ span.nav-icon-circle.bell {
   padding: 0.5rem 1rem 0.5rem 2.5rem;
   width: 100%;
   background-color: #f8fafc;
-  transition:
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
 }
 
 .search-input:focus {
