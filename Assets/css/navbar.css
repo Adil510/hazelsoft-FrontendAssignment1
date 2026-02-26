@@ -408,7 +408,7 @@ span.nav-icon-circle.bell {
   font-weight: 400 !important;
   padding: 0.3125rem 0.35rem !important;
   color: #1e293b !important;
-  border-bottom: none !important;
+  border-bottom: none;
 }
 
 .three-dots-icon i {
@@ -563,7 +563,7 @@ span.nav-icon-circle.bell {
   .navbar > .container-fluid > .d-flex.align-items-center {
     order: 2;
     margin-left: auto !important;
-    margin-right: 0.25rem !important;
+    margin-right: 0 !important;
   }
 
   .navbar-toggler {
@@ -589,7 +589,7 @@ span.nav-icon-circle.bell {
     overflow-y: auto;
     background-color: #ffffff;
     border-top: 1px solid #e2e8f0;
-    margin-top: 0.5rem;
+    margin-top: 0 !important;
     padding: 0;
     position: static;
   }
@@ -637,8 +637,9 @@ span.nav-icon-circle.bell {
     align-items: center !important;
     justify-content: space-between !important;
     width: 100% !important;
-    padding: 0.75rem 1rem !important;
+    padding: 8px 0px !important;
     margin: 0 !important;
+    line-height: 22.4px !important;
     text-align: left !important;
     box-sizing: border-box;
   }
@@ -674,11 +675,13 @@ span.nav-icon-circle.bell {
     transition: none !important;
     pointer-events: auto !important;
   }
-
   .navbar-nav .dropdown-menu.show {
     display: block !important;
   }
-
+  .navbar form {
+    margin-top: 16px !important;
+    padding: 0 !important;
+  }
   /* Fix 1: Dropend menus
      Bootstrap adds .show to BOTH the .dropend <li> AND the .dropdown-menu <ul>
      We need both selectors to beat the base display:none rule */
@@ -719,7 +722,13 @@ span.nav-icon-circle.bell {
     right: auto !important;
     flex-shrink: 0;
   }
-
+  .three-dots-icon {
+    border-bottom: 0.8px solid rgb(226, 232, 240);
+  }
+  .navbar-nav > .nav-item > .dropdown > .nav-link.three-dots-icon {
+    padding-top: 12px !important;
+    padding-bottom: 2px !important;
+  }
   /* Search bar */
   form[role="search"] {
     width: 100%;
