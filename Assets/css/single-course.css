@@ -701,3 +701,15 @@ body::-webkit-scrollbar {
   border-color: #cbd5e1;
   color: #fff;
 }
+.btn-buy-now {
+  min-width: 130px;
+  margin: 32px 32px 32px 32px !important;
+  padding: 8px 16px !important;
+}
+
+.btn-float-button {
+  position: fixed;
+  bottom: -7px;
+  right: 51px;
+  z-index: 999;
+}
