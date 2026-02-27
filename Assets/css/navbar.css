@@ -241,9 +241,8 @@ span.nav-icon-circle.bell {
   #dropdownNotification {
     position: relative !important;
   }
-
   #dropdownUser {
-    position: static !important;
+    position: relative !important;
   }
 }
 @media (min-width: 992px) {
@@ -275,11 +274,6 @@ span.nav-icon-circle.bell {
   }
 }
 @media (max-width: 991px) {
-  #dropdownNotification,
-  #dropdownUser {
-    position: static !important;
-  }
-
   #dropdownNotification .dropdown-menu,
   #dropdownUser .dropdown-menu {
     position: fixed !important;
@@ -555,6 +549,9 @@ span.nav-icon-circle.bell {
     transform: none !important;
     pointer-events: auto;
   }
+  .navbar form {
+    margin-left: 3.5px !important;
+  }
 }
 
 /* ============================================
@@ -698,7 +695,7 @@ span.nav-icon-circle.bell {
     width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
-    background-color: #eef2f7 !important;
+    background-color: white !important;
     padding: 0.25rem 0 0.25rem 1.5rem !important;
     border-left: 3px solid #cbd5e1 !important;
     border-top: none !important;
@@ -758,9 +755,7 @@ span.nav-icon-circle.bell {
 /* ============================================
    SEARCH INPUT
    ============================================ */
-.navbar form {
-  margin-left: 3.5px !important;
-}
+
 .search-input {
   border: 0.8px solid rgb(203, 213, 225) !important;
   border-radius: 6px !important;

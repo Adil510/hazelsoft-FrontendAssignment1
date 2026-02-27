@@ -20,7 +20,7 @@ body {
   background-color: #f1f5f9;
 }
 body::-webkit-scrollbar {
-  display: none;
+  width: 6px;
 }
 
 /* ============================================
@@ -448,6 +448,9 @@ body::-webkit-scrollbar {
 
   .product-slider .slick-slide {
     padding: 15px;
+  }
+  .last-custom-section {
+    padding-bottom: 20px !important;
   }
 }
 
