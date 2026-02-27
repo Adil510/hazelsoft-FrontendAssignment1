@@ -237,15 +237,7 @@ span.nav-icon-circle.bell {
 #dropdownUser {
   position: relative;
 }
-@media (max-width: 991px) {
-  #dropdownNotification {
-    position: relative !important;
-  }
 
-  #dropdownUser {
-    position: static !important;
-  }
-}
 @media (min-width: 992px) {
   #dropdownNotification,
   #dropdownUser {
@@ -275,6 +267,11 @@ span.nav-icon-circle.bell {
   }
 }
 @media (max-width: 991px) {
+  /* Make the navbar the reference point */
+  .navbar {
+    position: relative !important;
+  }
+
   #dropdownNotification,
   #dropdownUser {
     position: static !important;
@@ -282,20 +279,16 @@ span.nav-icon-circle.bell {
 
   #dropdownNotification .dropdown-menu,
   #dropdownUser .dropdown-menu {
-    position: fixed !important;
+    position: absolute !important;
+    top: 5% !important;
     left: 50% !important;
     right: auto !important;
-    top: 42px !important;
     transform: translateX(-50%) !important;
     width: 300px !important;
-    min-width: 300px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-    z-index: 1050;
   }
+
   #dropdownNotification .dropdown-menu {
-    min-width: 352px !important;
+    width: 352px !important;
   }
 }
 /* ============================================
@@ -555,6 +548,9 @@ span.nav-icon-circle.bell {
     transform: none !important;
     pointer-events: auto;
   }
+  .navbar form {
+    margin-left: 3.5px !important;
+  }
 }
 
 /* ============================================
@@ -698,7 +694,7 @@ span.nav-icon-circle.bell {
     width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
-    background-color: #eef2f7 !important;
+    background-color: white !important;
     padding: 0.25rem 0 0.25rem 1.5rem !important;
     border-left: 3px solid #cbd5e1 !important;
     border-top: none !important;
@@ -758,9 +754,7 @@ span.nav-icon-circle.bell {
 /* ============================================
    SEARCH INPUT
    ============================================ */
-.navbar form {
-  margin-left: 3.5px !important;
-}
+
 .search-input {
   border: 0.8px solid rgb(203, 213, 225) !important;
   border-radius: 6px !important;
